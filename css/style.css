@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cuerpo*/
+
+body{
+    background: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+    background-size: cover;
+}   
+
+/*Menu*/
+nav{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+    padding: 0.7rem; 
+}
+.menu{
+    list-style-type: none;
+    padding-right: 8.5rem;
+    text-align: center;
+    width: 100%;
+}
+.menu li{
+    display: inline-block;
+    margin: 0.7rem;
+    padding: 0.7rem;
+    font-size: larger;
+    text-align: center;
+}
+.menu li a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+.menu li a:hover{
+    color: grey;
+}
+
+/*Titulo*/
+
+h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+/*Sección 1*/
+
+.section1{
+    margin: 0.7rem;
+    padding: 0.7rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/* section2 */
+
+.section2{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.imageindex{
+    grid-column: 1/2;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    min-width: 30%;
+}
+
+.parrafo{
+    grid-column: 2/3;
+    line-height: 1.6;   
+    padding: 0.7rem;
+}
+
+
+/*Footer redes*/
+
+.redes{
+    list-style-type: none;
+    margin: 0.7rem;
+    padding: 0.7rem;
+    text-align: center;
+}
+.redes li{
+    display: inline-block;
+    text-align: center;
+    margin: 0.7rem;
+    padding: 0.7rem;
+}
+.redes li a{
+    text-decoration: none;
+    color: black;
+}
+.redes li a:hover{
+    color: black;
+    opacity: 50%;
+}
+
+/*Derechos*/
+
+.derechos{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: small;
+    font-family:'Courier New', Courier, monospace
+}
+ 
+/*Formulario*/
+
+.formClass{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.formClass legend{
+    font-family: initial;
+    font-size: x-large;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.formulario fieldset{
+    padding: 10px;
+}
+.formulario legend{
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.nombre{
+    padding-bottom: 10px;
+}
+
+.apellido{
+    padding-bottom: 10px;
+}
+
+.pais{
+   padding-bottom: 10px;
+}
+
+textarea{
+    margin-top: 2rem;
+    width: 25rem;
+    height: 10rem;
+    resize: none;
+}
+
+.enviar{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: medium;
+}
+
+/* recetas */
+
+main{
+    display: flex;
+    
+}
+.recetas{
+    font-family:'Dancing Script', cursive;
+}
+
+.receta1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.imgRec{
+    width: 90%;
+}
+
+.imgRec2{
+    width: 76%;
+}
+
+.receta1 .subT{
+    margin-bottom: 20px;
+}
+
+.receta1 .subT{
+    font-size: 2rem;
+    font-style: oblique;
+    text-decoration: underline; 
+}
+
+.receta1 p{
+    font-size: 1.5rem;
+    font-style: oblique;
+    text-decoration: underline; 
+}
+.receta1 ul li{
+    font-size: 1rem;
+}
+
+.receta1 ol li{
+    font-size: 1rem;
+}
+
+.ingredientes{
+    margin: 20px;
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.ingredientes2{
+    margin: 20px;
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+}
+
+.receta2{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.receta1 .pasos{
+    margin: 20px;
+    font-size: large;
+}
+
+ @media  (max-width:1000px){
+    .section2 {
+        grid-template-columns: 1fr;
+    }
+    .imageindex{
+        grid-column: 1/2;
+    }
+    .parrafo{
+        grid-column: 1/2;
+    }
+    .palta{
+        grid-column: 1/2;
+    }
+    
+}
