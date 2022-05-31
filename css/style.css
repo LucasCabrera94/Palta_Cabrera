@@ -209,24 +209,25 @@ main{
 }
 
 .receta1 p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-style: oblique;
     text-decoration: underline; 
 }
 .receta1 ul li{
     font-size: 1rem;
+    line-height: 2rem;
 }
 
 .receta1 ol li{
     font-size: 1rem;
+    line-height: 2rem;
 }
 
 .ingredientes{
     margin: 20px;
     display: flex;
     font-size: larger;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     width: 85%;
 }
 
@@ -234,8 +235,7 @@ main{
     margin: 20px;
     display: flex;
     font-size: larger;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     width: 72%;
 }
 
