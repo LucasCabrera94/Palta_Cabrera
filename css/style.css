@@ -89,10 +89,11 @@ h1{
 
 .redes{
     list-style-type: none;
-    margin: 0.7rem;
+    margin-top: 1rem;
     padding: 0.7rem;
     text-align: center;
 }
+
 .redes li{
     display: inline-block;
     text-align: center;
@@ -211,7 +212,8 @@ main{
 .receta1 p{
     font-size: 1.7rem;
     font-style: oblique;
-    text-decoration: underline; 
+    text-decoration: underline;
+    margin-right: 10rem;
 }
 .receta1 ul li{
     font-size: 1rem;
