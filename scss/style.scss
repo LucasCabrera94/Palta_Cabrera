@@ -1,0 +1,281 @@
+/* variables */
+
+$color_negro: black;
+$color_gris: grey;
+$boxshadow1: 0 2px 2px rgba(0, 0, 0, 0.2); 
+$boxshadow2: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+
+/* menu */
+
+@import "menu";
+
+/* Cuerpo */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+	background-size: cover;
+}
+
+/*Titulo*/
+
+h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+/*Sección 1*/
+
+.section1{
+    margin: 0.7rem;
+    padding: 0.7rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/* section2 */
+
+.section2{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.imageindex{
+    grid-column: 1/2;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    min-width: 30%;
+}
+
+.parrafo{
+    grid-column: 2/3;
+    line-height: 1.6;   
+    padding: 2rem;
+}
+
+/* section3 */
+.imgtex {
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	height: 430px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	.card {
+		width: 330px;
+		height: 430px;
+		border-radius: 8px;
+		box-shadow: $boxshadow1;
+		overflow: hidden;
+		margin: 20px;
+		text-align: center;
+		transition: all 0.25s;
+		&:hover {
+			transform: translateY(-15px);
+			box-shadow: $boxshadow2;
+		}
+		img {
+			width: 330px;
+			height: 220px;
+		}
+		h4 {
+			font-weight: 600;
+			padding: 1rem;
+		}
+		p {
+			padding: 1rem;
+			font-size: 16px;
+			font-weight: 300;
+		}
+		a {
+			font-weight: 500;
+			text-decoration: none;
+			color: #3498;
+		}
+	}
+}
+
+/* Main del Index */
+
+.indexmain{      
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer redes*/
+
+footer {
+	margin: 2rem;
+	width: 100%;
+	padding: 2rem;
+}
+.redes {
+	list-style-type: none;
+	margin-top: 1rem;
+	padding: 0.7rem;
+	text-align: center;
+	li {
+		display: inline-block;
+		text-align: center;
+		margin: 0.7rem;
+		padding: 0.7rem;
+		a {
+			text-decoration: none;
+			color: black;
+			&:hover {
+				color: black;
+				opacity: 50%;
+			}
+		}
+	}
+}
+
+/*Derechos*/
+
+.derechos{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: small;
+    font-family:'Courier New', Courier, monospace
+}
+
+/*Formulario*/
+.formClass {
+	width: 100%;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	legend {
+		font-family: initial;
+		font-size: x-large;
+	}
+}
+.formulario {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	fieldset {
+		padding: 10px;
+	}
+	legend {
+		margin-bottom: 10px;
+		font-size: large;
+	}
+}
+.nombre {
+	padding-bottom: 10px;
+}
+.apellido {
+	padding-bottom: 10px;
+}
+.pais {
+	padding-bottom: 10px;
+}
+textarea {
+	margin-top: 2rem;
+	width: 25rem;
+	height: 10rem;
+	resize: none;
+}
+.enviar {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: medium;
+}
+
+/* recetas */
+/* Galeria de foto */
+main {
+	display: flex;
+}
+.recetas {
+	font-family: 'Dancing Script', cursive;
+}
+.receta1 {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	.subT {
+		margin-bottom: 20px;
+		font-size: 2rem;
+		font-style: oblique;
+		text-decoration: underline;
+	}
+	p {
+		font-size: 1.7rem;
+		font-style: oblique;
+		text-decoration: underline;
+		margin-right: 10rem;
+	}
+	ul {
+		li {
+			font-size: 1rem;
+			line-height: 2rem;
+		}
+	}
+	ol {
+		li {
+			font-size: 1rem;
+			line-height: 2rem;
+		}
+	}
+	.pasos {
+		margin: 20px;
+		font-size: large;
+	}
+}
+.imgRec {
+	width: 90%;
+}
+.imgRec2 {
+	width: 76%;
+}
+.ingredientes {
+	margin: 20px;
+	display: flex;
+	font-size: larger;
+	justify-content: space-around;
+	width: 85%;
+}
+.ingredientes2 {
+	margin: 20px;
+	display: flex;
+	font-size: larger;
+	justify-content: space-around;
+	width: 72%;
+}
+.receta2 {
+	display: flex;
+	align-items: flex-end;
+}
+@media (max-width:1000px) {
+	.section2 {
+		grid-template-columns: 1fr;
+	}
+	.imageindex {
+		grid-column: 1/2;
+	}
+	.parrafo {
+		grid-column: 1/2;
+	}
+	.palta {
+		grid-column: 1/2;
+	}
+}
