@@ -1,0 +1,69 @@
+main {
+	display: flex;
+}
+.recetas {
+	font-family: 'Dancing Script', cursive;
+}
+.receta1 {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	.subT {
+		margin-bottom: 20px;
+		font-size: 2rem;
+		font-style: oblique;
+		text-decoration: underline;
+	}
+	p {
+		font-size: 1.7rem;
+		font-style: oblique;
+		text-decoration: underline;
+		margin-right: 10rem;
+	}
+	ul {
+		li {
+			font-size: 1rem;
+			line-height: 2rem;
+		}
+	}
+	ol {
+		li {
+			font-size: 1rem;
+			line-height: 2rem;
+		}
+	}
+	.pasos {
+		margin: 20px;
+		font-size: large;
+	}
+}
+.imgRec {
+	width: 90%;
+}
+.imgRec2 {
+	width: 76%;
+}
+
+/* Mixin */
+
+@mixin estructura ($margen, $ancho){
+    margin: $margen;
+	display: flex;
+	font-size: larger;
+	justify-content: space-around;
+	width: $ancho;
+}
+.ingredientes {
+	@include estructura(20px, 85%);
+}
+.ingredientes2 {
+	@include estructura(20px, 85%);
+}
+
+
+.receta2 {
+	display: flex;
+	align-items: flex-end;
+}
+

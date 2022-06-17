@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* variables */
-/* menu */
+/* Imports */
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +38,159 @@ nav {
 
 .menu li a:hover {
   color: grey;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recetas {
+  font-family: 'Dancing Script', cursive;
+}
+
+.receta1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.receta1 .subT {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+.receta1 p {
+  font-size: 1.7rem;
+  font-style: oblique;
+  text-decoration: underline;
+  margin-right: 10rem;
+}
+
+.receta1 ul li {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.receta1 ol li {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.receta1 .pasos {
+  margin: 20px;
+  font-size: large;
+}
+
+.imgRec {
+  width: 90%;
+}
+
+.imgRec2 {
+  width: 76%;
+}
+
+/* Mixin */
+.ingredientes {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: larger;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 85%;
+}
+
+.ingredientes2 {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: larger;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 85%;
+}
+
+.receta2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* el mixin se encuentra en este import*/
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.formulario fieldset {
+  padding: 10px;
+}
+
+.formulario legend {
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+.nombre {
+  padding-bottom: 10px;
+}
+
+.apellido {
+  padding-bottom: 10px;
+}
+
+.pais {
+  padding-bottom: 10px;
+}
+
+textarea {
+  margin-top: 2rem;
+  width: 25rem;
+  height: 10rem;
+  resize: none;
+}
+
+.enviar {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+/*SASS II (extend)*/
+.textcard, .mixtext {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.mixtext {
+  font-size: medium;
 }
 
 /* Cuerpo */
@@ -230,149 +383,6 @@ footer {
   font-size: x-large;
 }
 
-.formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 10px;
-  margin: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-}
-
-.formulario fieldset {
-  padding: 10px;
-}
-
-.formulario legend {
-  margin-bottom: 10px;
-  font-size: large;
-}
-
-.nombre {
-  padding-bottom: 10px;
-}
-
-.apellido {
-  padding-bottom: 10px;
-}
-
-.pais {
-  padding-bottom: 10px;
-}
-
-textarea {
-  margin-top: 2rem;
-  width: 25rem;
-  height: 10rem;
-  resize: none;
-}
-
-.enviar {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  font-size: medium;
-}
-
-/* recetas */
-/* Galeria de foto */
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.recetas {
-  font-family: 'Dancing Script', cursive;
-}
-
-.receta1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.receta1 .subT {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  font-style: oblique;
-  text-decoration: underline;
-}
-
-.receta1 p {
-  font-size: 1.7rem;
-  font-style: oblique;
-  text-decoration: underline;
-  margin-right: 10rem;
-}
-
-.receta1 ul li {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-.receta1 ol li {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-.receta1 .pasos {
-  margin: 20px;
-  font-size: large;
-}
-
-.imgRec {
-  width: 90%;
-}
-
-.imgRec2 {
-  width: 76%;
-}
-
-.ingredientes {
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: larger;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 85%;
-}
-
-.ingredientes2 {
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: larger;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 72%;
-}
-
-.receta2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
 @media (max-width: 1000px) {
   .section2 {
     -ms-grid-columns: 1fr;
@@ -394,4 +404,7 @@ main {
     grid-column: 1/2;
   }
 }
+
+/* recetas */
+/* Galeria de foto */
 /*# sourceMappingURL=style.css.map */
