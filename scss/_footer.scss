@@ -1,0 +1,36 @@
+/*Footer redes*/
+
+footer {
+	margin: 2rem;
+	width: 100%;
+	padding: 2rem;
+}
+.redes {
+	list-style-type: none;
+	margin-top: 1rem;
+	padding: 0.7rem;
+	text-align: center;
+	li {
+		display: inline-block;
+		text-align: center;
+		margin: 0.7rem;
+		padding: 0.7rem;
+		a {
+			text-decoration: none;
+			color: black;
+			&:hover {
+				color: black;
+				opacity: 50%;
+			}
+		}
+	}
+}
+
+/*Derechos*/
+
+.derechos{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: small;
+    font-family:'Courier New', Courier, monospace
+}
