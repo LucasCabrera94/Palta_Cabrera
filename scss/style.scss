@@ -8,7 +8,7 @@ $boxshadow2: 0 12px 16px rgba(0, 0, 0, 0.2);
 
 /* Imports */
 
-
+@import "fotos";
 @import "menu";
 @import "recetas";  /* el mixin se encuentra en este import*/
 @import "formulario";
@@ -38,6 +38,7 @@ $boxshadow2: 0 12px 16px rgba(0, 0, 0, 0.2);
 body {
 	background: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /*Titulo*/
@@ -130,6 +131,7 @@ h1{
 .indexmain{      
     display: flex;
     flex-direction: column;
+	width: 100%;
 }
 
 
@@ -146,6 +148,7 @@ h1{
 	.palta {
 		grid-column: 1/2;
 	}
+
 }
 
 
