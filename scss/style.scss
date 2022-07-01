@@ -13,19 +13,35 @@ $boxshadow2: 0 12px 16px rgba(0, 0, 0, 0.2);
 @import "recetas";  /* el mixin se encuentra en este import*/
 @import "formulario";
 @import "footer";
+@import "productos";
 
 /*SASS II (extend)*/
 
 
 
 .textcard{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: black
 }
 
 .mixtext{
 	@extend .textcard;
 	font-size: medium;
+}
+
+/*Animaciones*/
+
+.parrafo.animate__animated.animate__fadeInRight{
+	--animate-duration: 0.5s;
+}
+.parrafo2.animate__animated.animate__fadeInRight{
+	--animate-duration: 1s;
+}
+.parrafo3.animate__animated.animate__fadeInRight{
+	--animate-duration: 1.5s;
+}
+.imageindex.animate__animated.animate__fadeIn{
+	--animate-duration: 2s;
 }
 
 
@@ -35,18 +51,28 @@ $boxshadow2: 0 12px 16px rgba(0, 0, 0, 0.2);
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
 body {
-	background: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
-	background-size: cover;
-	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+	background-color: #EEEEEE;
 }
 
+.conteiner{
+	background-color: #ffffff;
+	margin-top: 40px;
+	margin: 0 40px;
+}
+.navbar{
+	background-color: #45B39D;
+
+}
 /*Titulo*/
 
 h1{
     text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
 }
 
 /*Sección 1*/
@@ -71,6 +97,7 @@ h1{
 
 .imageindex{
     grid-column: 1/2;
+	grid-row: 1/4;
     margin: 0.5rem;
     padding: 0.5rem;
     width: 100%;
@@ -83,16 +110,22 @@ h1{
     padding: 2rem;
 }
 
-/* section3 */
+p{
+	grid-column: 2/3;
+    line-height: 1.6;   
+    padding: 2rem;
+}
+
+/* Cards */
 .imgtex {
 	display: flex;
 	width: 100%;
 	max-width: 1200px;
-	height: 430px;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: auto;
 	.card {
+		background-color: #ffffff;
 		width: 330px;
 		height: 430px;
 		border-radius: 8px;

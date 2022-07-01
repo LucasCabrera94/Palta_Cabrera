@@ -18,9 +18,9 @@ nav {
 		font-size: larger;
 		text-align: center;
 		a {
+			color: blanchedalmond;
 			text-decoration: none;
 			display: inline-block;
-			color: $color_negro;
 			&:hover {
 				color: $color_gris;
 			}
