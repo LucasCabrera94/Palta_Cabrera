@@ -1,0 +1,41 @@
+.cardProduct{
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	.product{
+		background-color: #ffffff;
+		width: 330px;
+		height: 430px;
+		border-radius: 8px;
+		box-shadow: $boxshadow1;
+		overflow: hidden;
+		margin: 20px;
+		text-align: center;
+		transition: all 0.25s;
+		&:hover {
+			transform: translateY(-15px);
+			box-shadow: $boxshadow2;
+		}
+		img {
+			width: 330px;
+			height: 220px;
+		}
+		h4 {
+			font-weight: 600;
+			padding: 0.5rem;
+		}
+		p {
+			padding: 0.5rem;
+			font-size: 16px;
+			font-weight: 300;
+		}
+		a {
+			font-weight: 500;
+			text-decoration: none;
+			color: #3498;
+		}
+	}
+}

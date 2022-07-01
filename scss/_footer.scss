@@ -1,13 +1,14 @@
 /*Footer redes*/
 
 footer {
+	background-color: #138D75;
 	width: 100%;
-	padding: 2rem;
+	padding: 15px;
 }
 .redes {
 	list-style-type: none;
-	margin-top: 1rem;
-	padding: 0.7rem;
+	margin-top: 16px;
+	padding: 20px;
 	text-align: center;
 	li {
 		display: inline-block;
@@ -16,7 +17,7 @@ footer {
 		padding: 0.7rem;
 		a {
 			text-decoration: none;
-			color: black;
+			color: blanchedalmond;
 			&:hover {
 				color: black;
 				opacity: 50%;
@@ -28,8 +29,9 @@ footer {
 /*Derechos*/
 
 .derechos{
+	text-align: center;
     margin: 0.5rem;
     padding: 0.5rem;
     font-size: small;
-    font-family:'Courier New', Courier, monospace
-}
+    font-family: 'Roboto', sans-serif;
+} 
