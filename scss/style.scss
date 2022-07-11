@@ -5,15 +5,15 @@ $color_gris: grey;
 $boxshadow1: 0 2px 2px rgba(0, 0, 0, 0.2); 
 $boxshadow2: 0 12px 16px rgba(0, 0, 0, 0.2);
 
-
 /* Imports */
 
 @import "fotos";
 @import "menu";
-@import "recetas";  /* el mixin se encuentra en este import*/
+@import "recetas";  
 @import "formulario";
 @import "footer";
 @import "productos";
+@import "animaciones";
 
 /*SASS II (extend)*/
 
@@ -27,21 +27,6 @@ $boxshadow2: 0 12px 16px rgba(0, 0, 0, 0.2);
 .mixtext{
 	@extend .textcard;
 	font-size: medium;
-}
-
-/*Animaciones*/
-
-.parrafo.animate__animated.animate__fadeInRight{
-	--animate-duration: 0.5s;
-}
-.parrafo2.animate__animated.animate__fadeInRight{
-	--animate-duration: 1s;
-}
-.parrafo3.animate__animated.animate__fadeInRight{
-	--animate-duration: 1.5s;
-}
-.imageindex.animate__animated.animate__fadeIn{
-	--animate-duration: 2s;
 }
 
 
@@ -61,7 +46,11 @@ body {
 .conteiner{
 	background-color: #ffffff;
 	margin-top: 40px;
-	margin: 0 40px;
+	margin: 0 40px 0 40px;
+}
+
+.mainIndex{
+	padding: 30px 30px 30px 30px;
 }
 .navbar{
 	background-color: #45B39D;
@@ -75,30 +64,19 @@ h1{
     font-size: 40px;
 }
 
-/*Sección 1*/
+.titulo{
+	padding: 10px;
+}
+/* section1 */
 
 .section1{
-    margin: 0.7rem;
-    padding: 0.7rem;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-
-/* section2 */
-
-.section2{
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
 
 .imageindex{
     grid-column: 1/2;
-	grid-row: 1/4;
-    margin: 0.5rem;
+	grid-row: 1/5;
     padding: 0.5rem;
     width: 100%;
     min-width: 30%;
@@ -107,16 +85,25 @@ h1{
 .parrafo{
     grid-column: 2/3;
     line-height: 1.6;   
-    padding: 2rem;
+    padding: 5px;
+
+}
+
+.parrafo2{
+    grid-column: 2/3;
+    line-height: 1.6;   
+    padding: 5px;
 }
 
 p{
 	grid-column: 2/3;
     line-height: 1.6;   
-    padding: 2rem;
+    padding: 5px;
+	font-size: large;
 }
 
 /* Cards */
+
 .imgtex {
 	display: flex;
 	width: 100%;
@@ -159,17 +146,11 @@ p{
 	}
 }
 
-/* Main del Index */
-
-.indexmain{      
-    display: flex;
-    flex-direction: column;
-	width: 100%;
-}
 
 
-@media (max-width:1000px) {
-	.section2 {
+@media only screen and (max-width: 1023px)
+	{
+	.section1 {
 		grid-template-columns: 1fr;
 	}
 	.imageindex {
@@ -178,10 +159,22 @@ p{
 	.parrafo {
 		grid-column: 1/2;
 	}
+	.parrafo2{
+		grid-column: 1/2;
+	}
+	.parrafo3{
+		grid-column: 1/2;
+	}
+	.parrafo4{
+		grid-column: 1/2;
+	}
+	.parrafo5{
+		grid-column: 1/2;
+	}
 	.palta {
 		grid-column: 1/2;
 	}
-
 }
+
 
 
