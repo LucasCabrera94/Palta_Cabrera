@@ -60,11 +60,11 @@ nav {
     padding: 0.7rem;
     font-size: larger;
     text-align: center; }
-    .menu li a {
+    .menu li a.nav-link.active {
       color: blanchedalmond;
       text-decoration: none;
       display: inline-block; }
-      .menu li a:hover {
+      .menu li a.nav-link.active:hover {
         color: grey; }
 
 .mainrecetas {
@@ -149,17 +149,21 @@ footer {
   margin-top: 16px;
   padding: 20px;
   text-align: center; }
-  .redes li {
-    display: inline-block;
-    text-align: center;
-    margin: 0.7rem;
-    padding: 0.7rem; }
-    .redes li a {
-      text-decoration: none;
-      color: blanchedalmond; }
-      .redes li a:hover {
-        color: black;
-        opacity: 50%; }
+  .redes ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .redes ul li {
+      display: inline-block;
+      text-align: center;
+      margin: 0.7rem;
+      padding: 0.7rem; }
+      .redes ul li a {
+        text-decoration: none;
+        color: blanchedalmond; }
+        .redes ul li a:hover {
+          color: black;
+          opacity: 50%; }
 
 /*Derechos*/
 .derechos {
@@ -179,7 +183,6 @@ footer {
   .cardProduct .product {
     background-color: #ffffff;
     width: 330px;
-    height: 430px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -241,6 +244,10 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.container-fluid {
+  flex-direction: row-reverse;
+  margin: 0 35px 0 35px; }
 
 body {
   font-family: 'Roboto', sans-serif;
