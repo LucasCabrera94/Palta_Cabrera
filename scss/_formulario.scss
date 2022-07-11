@@ -4,20 +4,20 @@
 	display: flex;
 	justify-content: center;
 	legend {
-		font-family: initial;
+		font-family: 'Roboto', sans-serif;
 		font-size: x-large;
 	}
 }
 
 .formulario {
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
-	margin: 10px;
-	margin-bottom: 10px;
-	padding: 15px;
-	font-family: 'Times New Roman', Times, serif;
-	text-align: center;
+	background-color:rgba(0, 0, 0, 0.4);
+	width: 450px;
+	margin-top: 20px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 7px;
 	fieldset {
 		padding: 10px;
 	}
@@ -40,6 +40,7 @@ textarea {
 	width: 25rem;
 	height: 10rem;
 	resize: none;
+	font-family: 'Roboto', sans-serif;
 }
 .enviar {
 	margin-bottom: 10px;
