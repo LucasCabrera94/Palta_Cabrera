@@ -38,8 +38,10 @@ $boxshadow2: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .container-fluid{
-	flex-direction: row-reverse;
 	margin: 0 35px 0 35px;
+}
+.navbar-nav{
+	justify-content: flex-end;
 }
 
 body {
@@ -138,7 +140,7 @@ p{
 			padding: 1rem;
 		}
 		p {
-			padding: 1rem;
+			padding: 10px;
 			font-size: 16px;
 			font-weight: 300;
 		}
